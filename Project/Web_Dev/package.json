@@ -1,0 +1,16 @@
+{
+  "name": "web_dev",
+  "version": "1.0.0",
+  "description": "Things to do:\r 1. Separate page for each use case(probably). Create these pages\r 2. Add the main contents in them with a little bit of styling.\r 3. Do not waste time on styling.\r 4. Once we are done the main part (adding contents) we can then do styling\r 5. adding script files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hassam",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "nanoid": "^5.0.6"
+  }
+}
