@@ -1,0 +1,16 @@
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid green;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    outline: auto;
+    height: 500px;
+}

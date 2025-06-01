@@ -1,0 +1,20 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table Event {
+  eventId String [pk]
+  name String [not null]
+  location String [not null]
+  organizer String [not null]
+  bookings Booking [not null]
+}
+
+Table Booking {
+  bookingId String [pk]
+  numberOfTickets Int [not null]
+  Event Event [not null]
+  eventId String [not null]
+}
+
+Ref: Booking.eventId > Event.eventId

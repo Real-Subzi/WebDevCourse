@@ -1,0 +1,17 @@
+{
+  "name": "banking-app-ol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha **/*.spec.js",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "chai": "^5.1.0",
+    "mocha": "^10.3.0"
+  }
+}

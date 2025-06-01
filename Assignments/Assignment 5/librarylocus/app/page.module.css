@@ -1,0 +1,369 @@
+/* START OF STYLES */
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+} */
+
+.html {
+    background-color: #f0f0f0;
+}
+
+.body {
+    color: #273018;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 1rem;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+}
+
+#mainContent {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bookFilters {
+    display: grid;
+    grid-template-columns: 3fr auto;
+    margin: 40px;
+}
+
+#searchOptions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#searchBox {
+    grid-column: 1/2;
+}
+
+#searchBtn {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+    #search-box {
+        height: 40px;
+    }
+}
+
+/* table styling */
+.table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.td,
+.th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tr:hover {
+    background-color: #ddd;
+}
+
+.th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #9a70c7;
+    color: white;
+}
+/* END OF STYLES */
+
+
+
+/* START OF NAV BAR */
+.navbar {
+  font-size: 18px;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.mainNav {
+  list-style-type: none;
+  display: none;
+}
+
+#mainContent {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#jsMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.navLinks,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mainNav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.inputFieldRadio{
+  margin: 10px;
+}
+
+.navbarToggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 70px;
+      align-items: center;
+  }
+
+  .mainNav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+
+  .mainNav li {
+      margin: 0;
+  }
+
+  #jsMenu {
+      flex-direction: row;
+      border-top: none;
+  }
+
+  .navLinks {
+      margin-left: 40px;
+  }
+
+  .logo {
+      margin-top: 0;
+  }
+
+  .navbarToggle {
+      display: none;
+  }
+
+  .logo:hover,
+  .navLinks:hover {
+      color: rgba(255, 255, 255, 1);
+  }
+}
+/* END OF NAV BAR */
+
+
+
+/* START OF BOOK FORM */
+#searchForm {
+  display: grid;
+  background: #f9f9f9;
+  border: 1px solid #c9e6ff;
+  margin: 1em auto 0 auto;
+  max-width: 90%;
+  padding: 1em;
+}
+
+#bookEditorForm {
+  display: grid;
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid #c9e6ff;
+  margin: 1em auto 0 auto;
+  max-width: 900px;
+  padding: 1em;
+  grid-gap: 2em;
+}
+
+#bookEditorForm .formGroup {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2em;
+}
+
+@media screen and (max-width: 600px) {
+  #bookEditorForm .formGroup {
+      grid-template-columns: 1fr;
+  }
+}
+
+#bookEditorForm .formControl {
+  flex: 0.7;
+  justify-content: right;
+}
+
+.inputPlace {
+  min-height: 2em;
+}
+
+.inputBtn {
+  background-color: #aa52e6;
+  color: #ffffff;
+  grid-column: 2/3;
+}
+
+.labels {
+  text-align: left;
+}
+/* END OF BOOK FORM */
+
+
+
+/* START OF CARDS SECTION */
+.cardImage {
+  height: auto;
+  /* max-width: 100%; */
+  vertical-align: middle;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid #ccc;
+  color: #696969;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+}
+
+.btnDelete {
+  background-color: #f00;
+}
+
+.btnUpdate {
+  background-color: #a52ee6;
+}
+
+.btnDetails {
+  background-color: #80764d;
+}
+
+.btnDelete,
+.btnUpdate,
+.btnDetails {
+  color: white;
+}
+
+.btnOptions {
+  display: flex;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cardsItem,
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  flex: 1;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
+.card:hover .cardImage {
+  filter: contrast(100%);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+
+.cardImage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  max-width: 500px;
+}
+
+.cardImage::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cardText {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+
+@media (min-width: 40rem) {
+  .cardImage::before {
+      padding-top: 66.6%;
+  }
+
+  .btnOptions {
+      flex-direction: row;
+  }
+}
+/* END OF CARDS SECTION */

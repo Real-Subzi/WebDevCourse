@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Title</title>
+</head>
+
+<body>
+  <h1>Contact Us</h1>
+  <h3>We will do our best to get back to you as soon as we can</h3>
+  <a href="index.html">Home</a>
+
+  <form action="">
+    <fieldset> <!-- The Id is what makes it direct to the text field if you click on the label -->
+      <legend>Fill this form</legend>
+
+      <div>
+        <label for="Fname"><b>Full Name</b></label>
+        <input type="text" name="FName" required placeholder="Enter your full name">
+      </div>
+
+      <div>
+        <label for="PNum"><b>Phone Number</b></label>
+        <input type="tel" name="PNum" required placeholder="+974-###-##-###">
+      </div>
+
+      <div>
+        <label for="email"><b>Email</b></label>
+        <input type="email" name="email" required placeholder="your-email@example.com">
+      </div>
+
+      <div>
+        <label for="Gender"><b>Gender: </b></label>
+
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" required> <!--The Required applies onto all the items in the "name" group-->
+
+        <label for="Female">Female</label>
+        <input type="radio" name="Gender">
+      </div>
+
+      <div>
+        <label for="DOB"><b>Date Of Birth</b></label>
+        <input type="date" name="DOB" required>
+      </div>
+
+      <div>
+        <label for="PMOC"><b>Preferred Method Of Contact: </b></label>
+
+        <label for="Phone">Phone</label>
+        <input type="checkbox" name="PMOC">
+
+        <label for="Email">Email</label>
+        <input type="checkbox" name="PMOC">
+      </div>
+
+      <div>
+        <label for="Rating"><b>How do you rate our website?</b></label>
+        <select name="Rating" required>
+          <option value="Excellent">Excellent</option>
+          <option value="Very Good">Very Good</option>
+          <option value="Good">Good</option>
+          <option value="Poor">Poor</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="Message"><b>Message</b></label>
+        <br>
+        <input type="text" name="Message" placeholder="Leave your message" size="50">
+      </div>
+
+      <div>
+        <input type="submit" />
+        <input type="reset">
+      </div>
+    </fieldset>
+  </form>
+
+</body>
+
+</html>

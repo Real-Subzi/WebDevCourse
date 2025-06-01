@@ -1,0 +1,32 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator dbml {
+  provider = "prisma-dbml-generator"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Event {
+  eventId   String @id @default(cuid())
+  name      String
+  location  String
+  organizer String
+
+  bookings Booking[]
+}
+
+model Booking {
+  bookingId       String @id @default(cuid())
+  numberOfTickets Int
+
+  Event        Event  @relation(fields: [eventId], references: [eventId])
+  eventId String
+}

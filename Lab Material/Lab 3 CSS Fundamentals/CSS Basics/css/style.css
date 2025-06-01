@@ -1,0 +1,77 @@
+/* Universal Selector */
+/*This will get rid of all the styling for the webpage as front end developers*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Type [Element] Selectors*/
+main {
+    background-color: aqua;
+    padding: 10px;
+}
+
+footer {
+    background-color: red;
+    color: white;
+    height: 40px;
+    text-align: center;
+}
+
+/*Class Selectors*/
+.title {
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.maintitle {
+    font-size: 3rem;
+
+}
+
+/* The order of effects are dependent on the order of the declaration of 
+the CSS file, not the order of the classes in the class tag.*/
+
+/*ID Selector*/
+#section1 {
+    background-color: bisque;
+}
+
+/*Mix this*/
+/*Means only p's that are in an article that are in a section that are in main*/
+/*Descendants*/
+main section article p {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/*Direct Child*/
+div>h2 {
+    background-color: brown;
+}
+
+h2~article {
+    /*means find the siblings of h2 that are articles and apply on them*/
+    font-size: larger;
+}
+
+
+h2+article {
+    /*means direct siblings, right next to each other*/
+    font-size: larger;
+    color: red;
+}
+
+/*OR*/
+header, footer, .title{
+    background-color: brown;
+    color: yellowgreen;
+    padding: 20px;
+}
+
+/*And*/
+div#section1{
+    border: 10px solid;
+}

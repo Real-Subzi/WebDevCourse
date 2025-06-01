@@ -1,0 +1,149 @@
+:root {
+    --main-bg-color: #333;
+    --secondary-bg-color: #eee;
+    --tertiary-bg-color: rgb(6, 1, 19);
+    --main-font-family: 'Arial', sans-serif;
+    --main-color: white;
+    --secondary-color: #333;
+    --btn-bg-color: #fff200;
+    --delete-btn-bg-color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font-family);
+}
+
+.banner-image {
+    width: 100%;
+    height: 600px;
+}
+
+.movies-list {
+    /* add your CSS to make the cards responsive */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    background: var(--secondary-bg-color);
+}
+
+.movie-card {
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    display: flex;
+}
+
+.poster {
+    width: 40%;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.movie-content {
+    background: var(--tertiary-bg-color);
+    display: grid;
+    place-items: center;
+    flex: 1;
+}
+
+.movie-title {
+    width: 100%;
+    padding: 1rem;
+    align-self: start;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to left, #6de307, transparent);
+}
+
+.movie-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.movie-info span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.movie-body {
+    padding: 20px;
+    background: var(--main-bg-color);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description p {
+    /* font-size: clamp(1rem, 20vw, 1.5rem); */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /* max-height: 3.2rem; */
+    padding: 1rem;
+}
+
+.synopsis {
+    padding: 1rem;
+}
+
+.btn-show-more,
+.btn-delete {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-delete {
+    color: var(--main-color);
+    background-color: var(--delete-btn-bg-color);
+    margin-left: 1rem;
+}
+
+.btn-show-more {
+    color: var(--secondary-color);
+    background-color: var(--btn-bg-color);
+}
+
+.action-btn {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .movie-card {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    .poster {
+        width: 100%;
+        height: 40%;
+
+        img {
+            max-height: 400px;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+    justify-content: center;
+}

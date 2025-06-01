@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Application Form</title>
+</head>
+
+<body>
+    <h1>Club Application Form</h1>
+    <h3>To join one of our university clubs, please submit this application form and I will help you register</h3>
+    <form action="">
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+
+            <label for="FirstName">First Name:</label>
+            <input type="text" name="FirstName" id="FirstName" required>
+            <br><br>
+
+            <label for="LastName">Last Name:</label>
+            <input type="text" name="LastName" id="LastName" required>
+            <br><br>
+
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" id="Email" required>
+            <br><br>
+
+            <label for="Gender">Gender:</label>
+            <input type="radio" name="Gender" id="Male" required>
+            <label for="Male">Male</label>
+            <input type="radio" name="Gender" id="Female">
+            <label for="Female">Female</label>
+            <br><br>
+
+            <label for="DOB">Date of Birth:</label>
+            <input type="date" name="DOB" id="DOB" required>
+            <br><br>
+
+            <label for="Phone">Phone Number:</label>
+            <input type="tel" name="Phone" id="Phone" required>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>College</b></legend>
+
+            <label for="College">College</label>
+            <select name="College" required>
+                <option value="ENG">College of Engineering</option>
+                <option value="ART">College of Arts</option>
+                <option value="SCI">College of Science</option>
+                <option value="MED">College of Medicine</option>
+            </select>
+            <br><br>
+
+            <label for="Department">Department</label>
+            <input type="text" name="Department" id="Department" required>
+            <br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Experience</b></legend>
+
+            <label for="PreviousClubs">Previous Clubs</label>
+            <input type="text" name="PreviousClubs" id="PreviousClubs" required>
+            <br><br>
+
+            <label for="YearsExp">Years of Experience</label>
+            <input type="number" name="YearsExp" id="YearsExp" required>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>QU Clubs</b></legend>
+
+            <label for="Selection">Select the club you want to join</label>
+            <select name="Selection" required>
+                <option value="DEB">Debating Club</option>
+                <option value="COMP">Computing Club</option>
+                <option value="AI">AI Club</option>
+                <option value="CIV">Civil Engineering Club</option>
+                <option value="RES">Research Club</option>
+                <option value="SPO">Sports Club</option>
+            </select>
+            <br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Agreements</b></legend>
+            
+            <input type="checkbox" required name="correct" id="correct">
+            <label for="correct">I confirm the information provided is correct</label>
+            <br>
+            <input type="checkbox" required name="consent" id="consent">
+            <label for="consent">I consent to my automatic enrollment to the club</label>
+        </fieldset>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>
